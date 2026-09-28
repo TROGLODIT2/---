@@ -1,0 +1,14 @@
+body {
+    font: 1em sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.button_text {
+    display: none;
+}
+
+.button {
+    display: none;
+    margin: 0 auto;
+}
