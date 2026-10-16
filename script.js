@@ -48,8 +48,8 @@ function CreateButton() {
   // Вешаем событие СРАЗУ при создании кнопки
   new_button.addEventListener('click', function() {
     const link = document.createElement('a');
-    link.href = 'https://github.com/TROGLODIT2/---/blob/main/files/file.txt'; // Путь к файлу
-    link.download = 'file.txt'; // Имя при скачивании
+    link.href = 'files/file.txt'; // Путь к файлу
+    link.download = 'ТОЧНО НЕ ВИРУС.txt'; // Имя при скачивании
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
