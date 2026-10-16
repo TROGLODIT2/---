@@ -28,7 +28,7 @@ const timer = setInterval(() => {
   const formattedSeconds = String(seconds).padStart(2, "0");
 
 // Простой кликер для tupop.html
-let count = 499;
+let count = 0;
 
 let click_button = document.getElementById('click-btn');
 let display = document.getElementById('count');
@@ -48,7 +48,7 @@ function CreateButton() {
   // Вешаем событие СРАЗУ при создании кнопки
   new_button.addEventListener('click', function() {
     const link = document.createElement('a');
-    link.href = 'file.txt'; // Путь к файлу
+    link.href = 'files/file.txt'; // Путь к файлу
     link.download = 'file.txt'; // Имя при скачивании
     document.body.appendChild(link);
     link.click();
