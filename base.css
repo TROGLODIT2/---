@@ -1,0 +1,48 @@
+/* Единый минимальный стиль для всех страниц */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Сероватые кнопки со слегка закруглёнными краями */
+button,
+.button,
+#input_button,
+#click-btn {
+  background: #cccccc;
+  color: #333333;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover,
+.button:hover,
+#input_button:hover,
+#click-btn:hover {
+  background: #bdbdbd;
+}
+
+button:active,
+.button:active,
+#input_button:active,
+#click-btn:active {
+  background: #aeaeae;
+}
+
+input[type="number"],
+#input {
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 1em;
+  background: #ffffff;
+}
