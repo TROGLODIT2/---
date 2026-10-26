@@ -1,0 +1,75 @@
+/* Единый минимальный стиль для всех страниц */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Контейнеры-дивы: выводим на центр и СЛЕГКА закругляем края */
+div {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Сероватые (чуть светлее) кнопки со слегка закруглёнными краями */
+button,
+.button,
+#input_button,
+#click-btn,
+#new_button {
+  background: #dedede;
+  color: #333333;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s ease,
+              box-shadow 0.2s ease,
+              transform 0.15s ease;
+}
+
+/* Базовые эффекты при наведении: подсветка, тень, лёгкий подъём */
+button:hover,
+.button:hover,
+#input_button:hover,
+#click-btn:hover,
+#new_button:hover {
+  background: #d0d0d0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+button:active,
+.button:active,
+#input_button:active,
+#click-btn:active,
+#new_button:active {
+  background: #c4c4c4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transform: translateY(0);
+}
+
+input[type="number"],
+#input {
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 1em;
+  background: #ffffff;
+}
