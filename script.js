@@ -2,6 +2,11 @@ let button_timer = 0;
 let button = document.querySelector('.button');
 let button_text = document.querySelector('.button_text');
 
+// Кнопка ведет на tupop.html
+button.addEventListener('click', () => {
+  window.location.href = 'tupop.html';
+});
+
 // Задаем время в секундах
 let totalSeconds = 120;
 
