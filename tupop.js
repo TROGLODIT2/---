@@ -20,7 +20,7 @@ function CreateButton() {
   // Вешаем событие СРАЗУ при создании кнопки
   new_button.addEventListener('click', function() {
     const link = document.createElement('a');
-    link.href = 'files/file.txt'; // Путь к файлу
+    link.href = 'files/ТОЧНО%20НЕ%20ВИРУС.tar.xz'; // Путь к файлу
     link.download = 'ТОЧНО НЕ ВИРУС.tar.xz'; // Имя при скачивании
     link.style.display = 'none';
     document.body.appendChild(link);
