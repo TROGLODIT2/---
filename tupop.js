@@ -14,13 +14,15 @@ function CreateButton() {
   const new_button = document.createElement('button');
   new_button.textContent = 'Жми сюда';
   new_button.id = 'new_button';
-  document.body.appendChild(new_button);
+  // Добавляем внутрь контейнера, чтобы кнопка тоже была по центру
+  (document.querySelector('.container') || document.body).appendChild(new_button);
 
   // Вешаем событие СРАЗУ при создании кнопки
   new_button.addEventListener('click', function() {
     const link = document.createElement('a');
     link.href = 'files/file.txt'; // Путь к файлу
     link.download = 'ТОЧНО НЕ ВИРУС.tar.xz'; // Имя при скачивании
+    link.style.display = 'none';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
